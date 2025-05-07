@@ -1,6 +1,10 @@
-{%extends "layout.html"%}
-{%block tittle%} Inicio {%endblock%}
+{% extends "layout.html" %}
 
-{%block content%}
-        
-{%endblock%}
+{% block content %}
+<h1>Ciudades disponibles</h1>
+<ul>
+  {% for ciudad in ciudades %}
+    <li><a href="/clima/{{ ciudad }}">{{ ciudad }}</a></li>
+  {% endfor %}
+</ul>
+{% endblock %}
