@@ -3,7 +3,6 @@ import requests
 
 app = Flask(__name__)
 
-# Diccionario directamente en el código
 ciudades = {
     "Buenos Aires": {"lat": -34.6037, "lon": -58.3816},
     "Cordoba": {"lat": -31.4201, "lon": -64.1888},
